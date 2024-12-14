@@ -21,16 +21,16 @@ The Broadcast Server is a simple command-line application that allows clients to
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Venukishore-R/broadcast-server.git
+   git clone https://github.com/Yelsnik/broadcast-server.git
    cd broadcast-server
    ```
 2. Install the required libraries (if using Go):
    ```bash
    go mod tidy
    ```
-3. Run the application:
+3. Run make install:
    ```bash
-   make run
+   make install
    ```
    
 ## Usage
@@ -39,7 +39,7 @@ The Broadcast Server is a simple command-line application that allows clients to
 
 To start the broadcast server, use the following command:
   ```bash
-  broadcast-server --start --port <PORT_NUMBER>
+  broadcast-server start --port <PORT_NUMBER>
   ```
 This command will start the server and listen for incoming client connections on a specified port.
 
@@ -47,7 +47,7 @@ This command will start the server and listen for incoming client connections on
 
 To connect a client to the server, use the following command:
   ```bash
-  broadcast-server --connect --port <PORT_NUMBER>
+  broadcast-server connect --port <PORT_NUMBER>
   ```
 Once connected, you can send messages to the server. The server will broadcast these messages to all connected clients.
 
